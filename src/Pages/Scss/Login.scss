@@ -1,0 +1,111 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    background-color: #f0cbf1;
+    height: 100vh;
+}
+.login-details{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 100px;
+    background-color: white;
+}
+.login-details h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.login-input{
+    display: flex;
+    flex-direction: column;
+}
+.login-input input{
+    width: 400px;
+    height: 30px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 75px;
+    border: 1px solid black;
+}
+.login-input button{
+    width: 115px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 25px;
+    border: 1px solid white;
+    background-color: orange;
+    margin-left: 130px;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.login-input label{
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    color: orange;
+}
+.login-details p{
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 15px;
+}
+.login-details span{
+    color: orange;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+@media(max-width:430px){
+    .login{
+        display: flex;
+        flex-direction: column;
+        height: 653px;
+        width: 503px;
+    }
+    .login-details{
+        margin-top: 150px;
+    }
+    .login-input input{
+        width: 360px;
+    }
+    .login-input label{
+        font-size: 20px;
+    }
+    .login-input button{
+        margin-left: 115px;
+    }
+    .login-details p{
+        margin-left: -5px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .login-details span{
+        font-size: 25px;
+    }
+}
+@media(max-width:380px){
+    .login{
+        height: 803px;
+        width: 503px;
+    }
+    .login-details{
+        margin-top: 230px;
+    }
+}
+@media(max-width:325px){
+    .login{
+        height: 867px;
+        width: 503px;
+    }
+    .login-details{
+        margin-top: 250px;
+    }
+}
