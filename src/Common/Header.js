@@ -11,9 +11,9 @@ function Header() {
   const { getTotalCartItems} = useContext(ShopContext);
 
   const menuRef = useRef();
-  const dropdown_toggel =(e)=>{
-     menuRef.current.classList.toggel('nav-menu-visible');
-     e.target.classList.toggel("open")
+  const dropdown_toggle =(e)=>{
+     menuRef.current.classList.toggle('nav-menu-visible');
+     e.target.classList.toggle("open")
   }
   
   const[menu,setMenu]=useState("");
@@ -31,7 +31,7 @@ function Header() {
   }
   return (
     <div className='navbar'>
-      <a onClick={dropdown_toggel}className='menu'><LuMenu /></a>
+      <a onClick={dropdown_toggle}className='menu'><LuMenu /></a>
 
       <div className='nav-logo'>
        <Link to={"/"}><img src={logo} alt='Logo'/></Link>

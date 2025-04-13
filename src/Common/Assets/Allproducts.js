@@ -9,6 +9,7 @@ import m8_image from '../Images/Men product 8.jpg'
 import m9_image from '../Images/Men product 9.jpg'
 import n1_image from '../Images/New collection 1.jpg'
 import n4_image from '../Images/New collection 4.jpg'
+import n7_image from '../Images/New collection 7.jpg'
 import p1_image from '../Images/Popular product 1.webp'
 import p2_image from '../Images/Popular product 2.webp'
 import p3_image from '../Images/Popular product 3.webp'
@@ -131,6 +132,13 @@ let all_products = [
      },
      {
         id:12,
+        name:"VOOTER:Men Relaxed Fit Cargo Pants",
+        image:n7_image,
+        new_price:"1,050",
+        old_price:"2,499",
+     },
+     {
+        id:13,
         name:"Men Regular Fit Solid Spread Collar Casual Shirt for partywear -Black",
         category:"Men",
         image:p1_image,
@@ -138,7 +146,7 @@ let all_products = [
         old_price:333,
      },
      {
-        id:13,
+        id:14,
         name:"Men's Plain Round Neck Full-Sleeve Sweatshirt - Casual, Comfortable, and Stylish",
         category:"Men",
         image:p2_image,
@@ -146,7 +154,7 @@ let all_products = [
         old_price:689,
      },
      {
-        id:14,
+        id:15,
         name:"Leotude Mens Premium Windcheater Jacket - Windproof & Breathable",
         category:"Men",
         image:p3_image,
@@ -154,7 +162,7 @@ let all_products = [
         old_price:849,
      },
      {
-        id:15,
+        id:16,
         name:"Trendy Classic Plane T-Shirt In Budget Round Neck Full Sleeve Polycotton Blend Tee For Men",
         category:"Men",
         image:p4_image,
@@ -162,7 +170,7 @@ let all_products = [
         old_price:349,
      },
     {
-        id: 16,
+        id: 17,
         name:"Emery Mesh Ruched Dress",
         category:"Women",
         image:w1_image,
@@ -170,7 +178,7 @@ let all_products = [
         old_price:"8,499",
     },
     {
-        id: 17,
+        id: 18,
         name:"Catherine Satin Pleated Midi Dress",
         category:"Women",
         image:w2_image,
@@ -178,7 +186,7 @@ let all_products = [
         old_price:"9,999",
     },
     {
-        id: 18,
+        id: 19,
         name:"Fleur Skater Mini Dress",
         category:"Women",
         image:w3_image,
@@ -186,7 +194,7 @@ let all_products = [
         old_price:"9,199",
     },
     {
-        id: 19,
+        id: 20,
         name:"AVAASA MIX N' MATCH-Women Ikat Print Straight Kurta",
         category:"Women",
         image:w4_image,
@@ -194,7 +202,7 @@ let all_products = [
         old_price:499,
     },
     {
-        id: 20,
+        id: 21,
         name:"RATAN-Women Embroidered A-Line Kurta",
         category:"Women",
         image:w5_image,
@@ -202,7 +210,7 @@ let all_products = [
         old_price:"4,999",
     },
     {
-        id: 21,
+        id: 22,
         name:"STYLEELITE-Women Kanjeevaram Woven Saree with Zari Accent",
         category:"Women",
         image:w6_image,
@@ -210,7 +218,7 @@ let all_products = [
         old_price:"2,578",
     },
     {
-        id: 22,
+        id: 23,
         name:"SVARAA-Women Designer Cotton Silk Saree",
         category:"Women",
         image:w7_image,
@@ -218,7 +226,7 @@ let all_products = [
         old_price:"2,999",
     },
     {
-        id: 23,
+        id: 24,
         name:"NYRIKA-Women Zari Woven Saree",
         category:"Women",
         image:w8_image,
@@ -226,7 +234,7 @@ let all_products = [
         old_price:"2,313",
     },
     {
-        id: 24,
+        id: 25,
         name:"TAG 7 PLUS-Floral Print Flared Palazzos",
         category:"Women",
         image:w9_image,
@@ -234,7 +242,7 @@ let all_products = [
         old_price:"3,199",
     },
     {
-        id:25,
+        id:26,
         name:"Sicily Dress (Green)",
         category:"Women",
         image:n2_image,
@@ -242,7 +250,7 @@ let all_products = [
         old_price:"7,999",
      },
      {
-        id:26,
+        id:27,
         name:"Leia Top",
         category:"Women",
         image:n5_image,
@@ -250,7 +258,7 @@ let all_products = [
         old_price:"2,999"
      },
      {
-        id:27,
+        id:28,
         name:"Love Shirt",
         category:"Women",
         image:n8_image,
@@ -258,7 +266,7 @@ let all_products = [
         old_price:"1,599",
      },
     {
-        id: 28,
+        id: 29,
         name:"US POLO ASSN.-Boys Striped Regular Fit Shirt",
         category:"Kid",
         image:k1_image,
@@ -266,7 +274,7 @@ let all_products = [
         old_price:"1,899",
     },
     {
-        id: 29,
+        id: 30,
         name:"TIOR-Boys Leaf Print Regular Fit Shirt",
         category:"Kid",
         image:k2_image,
@@ -274,7 +282,7 @@ let all_products = [
         old_price:"1,999",
     },
     {
-        id: 30,
+        id: 31,
         name:"NUSYL-Boys Crew-Neck T-Shirt with Full Sleeves",
         category:"Kid",
         image:k3_image,
@@ -282,7 +290,7 @@ let all_products = [
         old_price:549,
     },
     {
-        id: 31,
+        id: 32,
         name:"HELLCAT-Typographic Print Hooded T-Shirt",
         category:"Kid",
         image:k4_image,
@@ -290,7 +298,7 @@ let all_products = [
         old_price:"1,999",
     },
     {
-        id: 32,
+        id: 33,
         name:"PANICIA-Girls Fit and Flare Dress",
         category:"Kid",
         image:k5_image,
@@ -298,7 +306,7 @@ let all_products = [
         old_price:"2,999",
     },
     {
-        id: 33,
+        id: 34,
         name:"PTVIZE-Women Fit and Flare Dress",
         category:"Kid",
         image:k6_image,
@@ -306,7 +314,7 @@ let all_products = [
         old_price:"2,999",
     },
     {
-        id: 34,
+        id: 35,
         name:"AVSAR TRENDZ-Girls Embellished Fit & Flare Dress",
         category:"Kid",
         image:k7_image,
@@ -314,7 +322,7 @@ let all_products = [
         old_price:"1,248",
     },
     {
-        id: 35,
+        id: 36,
         name:"AJ DEZINES-Floral Flared Skirt",
         category:"Kid",
         image:k8_image,
@@ -322,7 +330,7 @@ let all_products = [
         old_price:"5,999",
     },
     {
-        id: 36,
+        id: 37,
         name:"CRIMSOUNE CLUB-Girls Quilted Jacket with Button-Closure",
         category:"Kid",
         image:k9_image,
@@ -330,7 +338,7 @@ let all_products = [
         old_price:"3,399",
     },
     {
-        id:37,
+        id:38,
         name:"RUNSTARS:Kids Stylish Hoodie",
         category:"Kid",
         image:n3_image,
@@ -338,7 +346,7 @@ let all_products = [
         old_price:"1,999",
      },
      {
-        id:38,
+        id:39,
         name:"PSPEACHES:Floral Print Fit and Flare Dress with Jacket",
         category:"Kid",
         image:n6_image,
@@ -346,7 +354,7 @@ let all_products = [
         old_price:"2,500",
      },
      {
-        id:39,
+        id:40,
         name:"Boys Floral Print Nehru Jacket with Mandarin Collar",
         category:"Kid",
         image:n9_image,

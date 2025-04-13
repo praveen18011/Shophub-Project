@@ -1,88 +1,148 @@
-.banner{
+.banner {
     display: flex;
     width: 80%;
     margin: 30px auto;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.shopcategory-indexsort{
+
+/* Sort bar section */
+.shopcategory-indexsort {
     display: flex;
-    margin: 0px 170px;
     justify-content: space-between;
     align-items: center;
+    margin: 20px auto;
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 10px;
 }
-.shopcategory-indexsort span{
+
+.shopcategory-indexsort span {
     font-weight: 600;
     font-size: 18px;
 }
-.shopcategory-sort p{
+
+/* Sort pill */
+.shopcategory-sort p {
     padding: 10px 20px;
     border: 1px solid #888;
     border-radius: 40px;
     cursor: pointer;
+    font-size: 16px;
 }
-.shopcategory-products{
-    // margin: 70px;
+
+/* Product Grid */
+.shopcategory-products {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 50px;
-    margin-top: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
+    margin: 20px auto;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1300px;
+    box-sizing: border-box;
     cursor: pointer;
 }
 
-@media(max-width:768px){
-    .shop-category{
-        display: flex;
-        flex-direction: column;
-        width: 1200px;
+/* ========== 1024px (Small Laptops & Tablets Landscape) ========== */
+@media (max-width: 1024px) {
+    .banner {
+        width: 90%;
+        flex-direction: row;
+        gap: 20px;
     }
-    .banner{
-        width: 1200px;
-        margin-left: 20px;
+
+    .shopcategory-indexsort {
+        width: 90%;
+        margin: 20px auto;
+        gap: 12px;
+        flex-wrap: wrap;
     }
-    .shopcategory-indexsort span{
-        font-size: 40px;
+
+    .shopcategory-indexsort span {
+        font-size: 17px;
     }
-    .shopcategory-indexsort p{
-        font-size: 30px;
+
+    .shopcategory-sort p {
+        padding: 9px 18px;
+        font-size: 15px;
     }
-    .shopcategory-sort p{
-      font-size: 30px;
-    }
-    .shopcategory-products{
-        display: flex;
-        flex-direction: column;
-        margin-top: 40px;
-        margin-left: -100px;
-    }
-}
-// @media(max-width:1024px){
-//     .banner{
-//         width: 1220px;
-//         margin-left: 10px;
-//     }
-//     .shopcategory-indexsort p{
-//         // margin-left: 10px;
-//     }
-//     .shopcategory-sort p{
-//         margin-left: 150px;
-//     }
-//     .shopcategory-products{
-//         margin-left: -300px;
-//     }
-// }
-@media(max-width:1440px){
-    .banner{
-        width: 1200px;
-    }
-    .shopcategory-products{
-        margin-left: 150px;
-    }
-    .shopcategory-indexsort{
-        display: flex;
-        justify-content: space-between;
-    }
-    .shopcategory-indexsort p{
-        margin-left: -80px;
+
+    .shopcategory-products {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 30px;
+        gap: 20px;
     }
 }
+
+
+/* Tablets */
+@media (max-width: 768px) {
+    .banner {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .shopcategory-indexsort {
+        width: 90%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .shopcategory-sort p {
+        font-size: 15px;
+        padding: 8px 16px;
+    }
+
+    .shopcategory-indexsort span {
+        font-size: 16px;
+    }
+}
+
+/* Phones */
+@media (max-width: 426px) {
+    .banner{
+        margin-top: 60px;
+    }
+
+    .shopcategory-indexsort span {
+        font-size: 15px;
+    }
+
+    .shopcategory-sort p {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
+    .shopcategory-products {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 375px) {
+    .shopcategory-indexsort {
+        gap: 6px;
+    }
+
+    .shopcategory-sort p {
+        font-size: 13.5px;
+        padding: 6px 12px;
+    }
+}
+
+/* Extra Small Phones */
+@media (max-width: 320px) {
+    .shopcategory-sort p {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    .shopcategory-indexsort span {
+        font-size: 14px;
+    }
+}
+

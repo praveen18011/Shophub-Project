@@ -4,11 +4,13 @@
     align-items: center;
     gap: 10px;
     margin-top: 100px;
+    margin-left: -170px;
 }
 .new-collections h1{
     color: black;
     font-size: 50px;
     font-weight: 600;
+    margin-left: 100px;
 }
 .new-collections hr{
     width: 300px;
@@ -16,6 +18,7 @@
     border-radius: 10px;
     background: orange;
     border: none;
+    margin-left: 100px;
 }
 .collections{
     display: grid;
@@ -26,19 +29,112 @@
     cursor: pointer;
 }
 
-@media(max-width:1024px){
-    .new-collections{
+/* Tablets */
+@media (max-width: 1024px) {
+    .collections {
+        grid-template-columns: repeat(2, 1fr);
         margin-left: 200px;
+        margin-right: 50px;
     }
 }
-@media(max-width:768px){
+
+/* Phones */
+@media (max-width: 768px) {
     .new-collections{
-      margin-left:350px;
-      width: 500px;
+        max-width: 768px;
     }
-    .collections{
-        display: inline-block;
-        // flex-wrap: wrap;
-        margin-left: -90px;
+    .collections {
+        grid-template-columns:repeat(2, 1fr);
+        margin-left: 360px;
+        margin-right: 20px;
+    }
+
+    .new-collections h1 {
+        font-size: 36px;
+        margin-left: 340px;
+    }
+
+    .new-collections hr {
+        width: 200px;
+        margin-left: 340px;
     }
 }
+
+/* Mobile: 425px */
+@media (max-width: 426px) {
+    .new-collections {
+        max-width: 426px;
+       
+    }
+    .new-collections h1 {
+        font-size: 32px;
+        width: 300px;
+        margin-left: 350px;
+    }
+
+    .new-collections hr {
+        width: 150px;
+        margin-left: 350px;
+    }
+
+    .collections {
+        grid-template-columns:1fr;
+        margin-top: 40px;
+        gap: 15px;
+        height: auto;
+    }
+}
+
+/* Mobile: 375px */
+@media (max-width: 376px) {
+    .new-collections h1 {
+        font-size: 28px;
+    }
+
+    .new-collections hr {
+        width: 150px;
+        margin-left: 300px;
+    }
+
+    .collections {
+        margin: 0 10px;
+        margin-left: 300px;
+        gap: 10px;
+    }
+}
+
+/* Mobile: 320px */
+@media (max-width: 320px) {
+    .new-collections{
+        max-width: 320px;
+    }
+    .new-collections h1 {
+        width: 250px;
+        font-size: 24px;
+        margin-left: 370px;
+    }
+
+    .new-collections hr {
+        width: 150px;
+        margin-left: 330px;
+    }
+
+    .collections {
+        gap: 40px;
+        padding: 0 5px;
+        
+        margin-left: 350px;
+        margin-top: 30px;
+    }
+    }
+    .collections img {
+        width: 190px;
+        height: 250px;
+    }
+    .collections p {
+        font-size: 26px;
+        width: fit-content;
+    }
+    
+    
+

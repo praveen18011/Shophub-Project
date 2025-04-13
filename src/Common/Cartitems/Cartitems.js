@@ -4,6 +4,9 @@ import { ShopContext } from '../Context/ShopContext'
 
 function Cartitems() {
     const{getTotalCartAmount,all_products,cartItems,removeFromCart}=useContext(ShopContext);
+    if(!ShopContext){
+      return<div>Error:ShopContext not provided.</div>
+    }
   return (
     <div className='cartitems'>
       <div className='cartitems-format-main'>
@@ -15,10 +18,11 @@ function Cartitems() {
         <p>Remove</p>
       </div>
       <hr/>
+
       {all_products.map((e)=>{
         if(cartItems[e.id]>0){
-            return <div>
-                     <div className='cartitems-format cartitems-format-main'>
+            return <div key={e.id}>
+                     <div className='cartitems-format cartitems-format-mai'>
                        <img src={e.image} alt=''/>
                        <p>{e.name}</p>
                        <p> ₹.{e.new_price}</p>

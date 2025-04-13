@@ -76,7 +76,9 @@
     background: orange;
     margin-bottom: 40px;
     border: none;
-    border-radius: 10px;
+    // border-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     outline: none;
     margin-left: 20px;
     cursor: pointer;
@@ -91,17 +93,207 @@
 .productdisplay-right-tag span{
     font-weight: 600;
 }
-@media(max-width:768px){
-    .productdisplay{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 500px;
-    }
-    .productdisplay-right{
-        margin-left: -140px;
-    }
-}
-@media(max-width: px){
 
-}
+/* Base styles remain the same from your code */
+
+/* ---------- Responsive Media Queries ---------- */
+@media (max-width: 1024px) {
+    .productdisplay {
+        display: flex;
+        margin: 0px 70px;
+        margin-top: 20px;
+    }
+  
+    .productdisplay-left {
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+  
+    .productdisplay-img img {
+        width:486px;
+        height:550px;
+    }
+  
+    .productdisplay-right {
+      margin: 20px 20px;
+    }
+  
+    .productdisplay-right h1 {
+      font-size: 22px;
+    }
+  
+    .productdisplay-right-star p {
+      margin-left: 95px;
+      margin-top: 35px;
+      font-size: 14px;
+    }
+  
+    .productdisplay-right-prices {
+      font-size: 20px;
+    }
+  
+    .productdisplay-right-size {
+      font-size: 18px;
+    }
+  
+    .sizes {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+  
+    .cart-buy {
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+  
+    .productdisplay-right button {
+      padding: 16px 32px;
+      width: 150px;
+      font-size: 15px;
+    }
+  }
+  
+
+/* Max Width: 768px (Tablet and below) */
+@media (max-width: 768px) {
+    .productdisplay {
+      flex-direction: column;
+      margin: 20px;
+      align-items: center;
+    }
+  
+    .productdisplay-left {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .productdisplay-img img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+    }
+  
+    .productdisplay-right {
+      margin: 20px 0;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .productdisplay-right-star {
+      justify-content: center;
+    }
+  
+    .productdisplay-right-star p {
+      margin-left: 125px;
+      margin-top: 35px;
+      font-size: 14px;
+    }
+  
+    .productdisplay-right-prices {
+      font-size: 20px;
+    }
+  
+    .productdisplay-right-size {
+      font-size: 18px;
+    }
+  
+    .sizes {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+  
+    .cart-buy {
+    //   flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .productdisplay-right button {
+      width: 150px;
+      max-width: 250px;
+      padding: 15px 30px;
+    }
+  }
+  
+  /* Max Width: 425px (Mobile Large) */
+  @media (max-width: 425px) {
+    .productdisplay-img img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .productdisplay-right h1 {
+      font-size: 20px;
+    }
+  
+    .productdisplay-right-prices {
+      font-size: 18px;
+    }
+  
+    .productdisplay-right-size {
+      font-size: 16px;
+    }
+  
+    .sizes label {
+      padding: 12px 16px;
+      font-size: 14px;
+    }
+  
+    .productdisplay-right button {
+      font-size: 15px;
+      padding: 14px 28px;
+    }
+  }
+  
+  /* Max Width: 375px (Mobile Medium) */
+  @media (max-width: 375px) {
+    .productdisplay-right-star p {
+      font-size: 13px;
+      margin-left: 85px;
+    }
+  
+    .productdisplay-right-prices {
+      font-size: 17px;
+    }
+  
+    .productdisplay-right button {
+      font-size: 14px;
+    }
+  }
+  
+  /* Max Width: 320px (Mobile Small) */
+  @media (max-width: 320px) {
+    .productdisplay-right h1 {
+      font-size: 18px;
+    }
+  
+    .productdisplay-right-star img {
+      width: 80px;
+    }
+  
+    .productdisplay-right-star p {
+      font-size: 12px;
+      margin-left: 115px;
+      margin-top: 30px;
+    }
+  
+    .productdisplay-right-prices {
+      font-size: 16px;
+    }
+  
+    .sizes label {
+      padding: 10px 14px;
+      font-size: 13px;
+    }
+  
+    .productdisplay-right button {
+      font-size: 13px;
+      width: 130px;
+    }
+  }
+  

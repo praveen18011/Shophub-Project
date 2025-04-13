@@ -1,5 +1,6 @@
 import React, { createContext, useState } from 'react'
 import all_products from '../Assets/Allproducts';
+import Product from '../../Pages/Product';
 export const ShopContext = createContext  (null);
 
 const getDefaultCart=()=>{
@@ -24,8 +25,8 @@ const ShopContextProvider =(props)=>{
             let itemInfo = all_products.find((product)=>product.id === Number(item))
             totalAmount += itemInfo.new_price * cartItems[item];
         }
-        return totalAmount;
     }
+    return totalAmount;
    }
 
    const getTotalCartItems =()=>{
@@ -34,8 +35,8 @@ const ShopContextProvider =(props)=>{
         if(cartItems[item]>0){
             totalItem += cartItems[item]
         }
-        return totalItem;
     }
+    return totalItem;
    }
    
    const removeFromCart=(itemId)=>{
@@ -53,22 +54,3 @@ const ShopContextProvider =(props)=>{
 
 export default ShopContextProvider;
 
-// import React from 'react'
-// import all_products from '../Assets/Allproducts'
-
-// export const ShopContext = createContext  (null);
-
-// function ShopContext(props) {
-//     const ShopContextProvider =()=>{
-//       const contextValue = {all_products}
-//     }
-//   return (
-//     <div>
-//         <ShopContext.Provider value={contextValue}>
-//             {props.children}
-//         </ShopContext.Provider>
-//     </div>
-//   )
-// }
-
-// export default ShopContext;

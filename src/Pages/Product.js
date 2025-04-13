@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import './Scss/Product.scss'
 import { ShopContext } from '../Common/Context/ShopContext'
 import { useParams } from 'react-router-dom';
 import Breadcrum from '../Common/Breadcrums/Breadcrum';
@@ -7,8 +8,6 @@ import Footer from '../Common/Footer';
 import Productdisplay from '../Common/Productdisplay/Productdisplay';
 import Descriptionbox from '../Common/Descriptionbox/Descriptionbox';
 import Relatedproduct from '../Common/Descriptionbox/Relatedproducts/Relatedproduct';
-import Popular from '../Common/Popular/Popular';
-import NewCollections from '../Common/NewCollections/NewCollections';
 
 function Product() {
   // const Product =()=>{
@@ -17,7 +16,7 @@ function Product() {
     const product = all_products.find((e)=>e.id === Number(productId));
 
    return (
-    <div>
+    <div className='product'>
       <Header/>
       <Breadcrum product={product}/>
       <Productdisplay product={product}/>
